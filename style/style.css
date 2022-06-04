@@ -1,0 +1,31 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0em 0em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titulo Titulo Titulo Titulo"
+    "nav nav nav nav"
+    "p p p img"
+    "tabla tabla lista mapa"
+    "tabla tabla form form"
+    "footer footer footer footer";
+}
+
+.Titulo { grid-area: Titulo; }
+
+.nav { grid-area: nav; }
+
+.p { grid-area: p; }
+
+.img { grid-area: img; }
+
+.tabla { grid-area: tabla; }
+
+.form { grid-area: form; }
+
+.footer { grid-area: footer; }
+
+.lista { grid-area: lista; }
+
+.mapa { grid-area: mapa; }
