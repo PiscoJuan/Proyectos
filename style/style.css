@@ -91,6 +91,9 @@ margin: 1em 0 1em 0;
 }
 
 /*lux*/
+.tabla>table, th, td {
+  border: 1px solid;
+}
 .tabla {
   padding: 0 1em 0 1em;
   grid-area: tabla; 
