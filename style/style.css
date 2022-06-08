@@ -1,19 +1,20 @@
 *{
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  padding: 0;
 }
 
 body{
   color:rgb(107, 123, 142);
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: rgb(214, 248, 184);
+  margin:0;
 }
 #container{  
   height: 100vh;
-  width: 98vw;
+  width: 100%;
+  margin: 0;
   display: grid;
-  grid-template-columns: 0.9fr 0.9fr 1.1fr 1.1fr;
+  grid-template-columns: 0.8fr 0.6fr 1.4fr 1.2fr;
   grid-template-rows: 0.25fr 0.25fr 0.3fr 0.5fr 0.3fr 0.15fr;
   gap: 0em 0em;
   grid-auto-flow: row;
@@ -64,6 +65,8 @@ body{
 /*p*/  
 .p { 
   grid-area:p; 
+  text-align: justify;
+  padding: 0 1em 0 1em;
 }
 
 .rojo{
@@ -72,16 +75,16 @@ body{
 
 /*img*/
 .img {
-  display: flex;
-  padding: 0px 0px 0px 0px;
-  grid-area: img; 
+margin: 1em 0 1em 0;
 }
 .img > img {
+  display:block;
   min-width: 200px;
   min-height: 200px;
   width: 25vw;
   height: 25vw;
   border-radius: 5vw;
+  max-with:100%;
 
   place-self: center;
   margin: 0 auto;
@@ -89,13 +92,12 @@ body{
 
 /*lux*/
 .tabla {
+  padding: 0 1em 0 1em;
   grid-area: tabla; 
 }
 
 .tabla>table {
   width: 90%;
-
-  margin: 0 auto;
 }
 
 .dentrotabla{
@@ -119,9 +121,10 @@ body{
 /*lista*/
 .lista {
   grid-area: lista;
+  padding:0 1em 0 1em;
 }
 .lista > ol{
-  margin-left:3vw;
+  padding-left:2em;
 }
 
 /*mapa*/
@@ -146,8 +149,8 @@ body{
   margin-bottom: 1vw;
 }
 .form .inputt{
-  height: 3vh;
-  width: 3vw;
+  height: 2em;
+  width: 4em;
 }
 .form .inputt:focus{
   color: #ffffff;
