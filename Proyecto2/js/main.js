@@ -163,7 +163,7 @@
 
 
     // Pie Chart
-    var ctx5 = $("#pie-chart").get(0).getContext("2d");
+    /*var ctx5 = $("#pie-chart").get(0).getContext("2d");
     var myChart5 = new Chart(ctx5, {
         type: "pie",
         data: {
@@ -182,7 +182,7 @@
         options: {
             responsive: true
         }
-    });
+    });*/
 
 
     // Doughnut Chart
