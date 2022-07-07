@@ -1,3 +1,95 @@
+let cargarDona = () => {
+    fetch('https://api.pokemontcg.io/v1/cards/').then(response => response.json())
+    .then(dat =>{
+        console.log(dat)
+        let  pokesto = 0
+        let  trainer = 0
+        let  energy = 0
+        for(poke of dat.cards){
+            if(poke.supertype=='Pokémon'){
+                pokesto += 1
+            }else if(poke.supertype=='Trainer'){
+                trainer += 1
+            }else if(poke.supertype=='Energy'){
+                energy += 1
+            }
+        }
+
+
+        var ctx6 = $("#doughnut-chart").get(0).getContext("2d");
+        var myChart6 = new Chart(ctx6, {
+            type: "doughnut",
+            data: {
+                labels: ["Pokémon Card", "Pokémon Trainer", "Pokémon Energy"],
+                datasets: [{
+                    backgroundColor: [
+                        "rgba(235, 22, 22, .7)",
+
+                        "rgba(235, 22, 22, .5)",
+
+                        "rgba(235, 22, 22, .3)"
+                    ],
+                    data: [pokesto, trainer, energy]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+})
+    .catch(console.error)
+}
+
+let cargarPie = () => {
+    fetch('https://api.pokemontcg.io/v1/cards/').then(response => response.json())
+    .then(dat =>{
+        for(poke of dat.cards){
+            if(poke.supertype=='Pokémon'){
+                pokesto += 1
+            }else if(poke.supertype=='Trainer'){
+                trainer += 1
+            }else if(poke.supertype=='Energy'){
+                energy += 1
+            }
+        }
+
+/*
+        var ctx6 = $("#doughnut-chart").get(0).getContext("2d");
+        var myChart6 = new Chart(ctx6, {
+            type: "doughnut",
+            data: {
+                labels: ["Pokémon Card", "Pokémon Trainer", "Pokémon Energy"],
+                datasets: [{
+                    backgroundColor: [
+                        "rgba(235, 22, 22, .7)",
+
+                        "rgba(235, 22, 22, .5)",
+
+                        "rgba(235, 22, 22, .3)"
+                    ],
+                    data: [pokesto, trainer, energy]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+        */
+})
+    .catch(console.error)
+}
+
+
+
+
+cargarDona()
+
+/*const actuallyReturnAnObjectArrowFunction = () => ({
+	hello: "world"
+})
+//console.log(actuallyReturnAnObjectArrowFunction())
+
+
 let cargarCartas = () => {
     fetch('https://api.pokemontcg.io/v2/cards/').then(response => response.json())
     .then(dat =>{
@@ -41,5 +133,7 @@ let gardevoir =() =>{
 }
 
 
-gardevoir()
-//cargarCartas()
+*/
+
+
+
