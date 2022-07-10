@@ -65,7 +65,7 @@
 
 
     // Worldwide Sales Chart
-    var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
+    /*var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
     var myChart1 = new Chart(ctx1, {
         type: "bar",
         data: {
@@ -90,7 +90,7 @@
         options: {
             responsive: true
         }
-    });
+    });*/
 
 
     // Salse & Revenue Chart
@@ -140,7 +140,7 @@
 
 
     // Single Bar Chart
-    var ctx4 = $("#bar-chart").get(0).getContext("2d");
+    /*var ctx4 = $("#bar-chart").get(0).getContext("2d");
     var myChart4 = new Chart(ctx4, {
         type: "bar",
         data: {
@@ -159,7 +159,7 @@
         options: {
             responsive: true
         }
-    });
+    });*/
 
 
     // Pie Chart
