@@ -91,7 +91,7 @@
             responsive: true
         }
     });*/
-
+/*
 
     // Salse & Revenue Chart
     var ctx2 = $("#salse-revenue").get(0).getContext("2d");
