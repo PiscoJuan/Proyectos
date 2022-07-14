@@ -66,9 +66,14 @@ let cargarBar = (anio) => {
           labels: arrnames,
           datasets: [
             {
+              label: 'Mostrar / Ocultar',
               backgroundColor: colores,
               data: arrcards,
             },
+            /*{
+              label: 'a',
+              
+            },*/
           ],
         },
         options: {
