@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   
+background-color: #fff8e7;}
+
+mat-toolbar{
+    height: 10%;
+    justify-content: right;
+    background-color:#60502e;
+}
+
+a:link{
+    text-decoration: none;
+    color:#ad1414;
+
+}
+
+a:visited{
+    text-decoration: none;
+    color:#ad1414;
+    
+}
+a:hover{
+    text-decoration: underline;
+    color:#ad1414;
+    
+}
+
+mat-card {
+    background-color:#60502e;
+}
+
+.titulo{
+    background-color:	#e2cfa1;
+    color: #ad1414;
+    height: 10%;
+    font-size: 2em;
+}
+
+.example-card{
+    color: #ad1414;
+    height: 10%;
+    font-size: 1.2em;
+    background-color:	#fff8e7;
+    padding: 0%;
+    margin: 0%;
+}
+.scard{
+    width: 95%;
+    color: #000000;
+    font-size: 1.2em;
+    background-color:	#fffdf1;
+height: fit-content;
+    text-align: center;
+    
+}
+.bcard{
+    width: 95%;
+    color: #000000;
+    font-size: 1.2vm;
+    background-color:	#fffdf1;
+    padding: 0%;
+    margin: 0%;
+
+}
+.bcard2{
+    width: 95%;
+    color: #000000;
+    font-size: 1.2vm;
+    background-color:	#fffdf1;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nomClass{
+    color: #ad1414;
+
+}
+
+.botonesG{
+    color: #ad1414;
+    font-size: 0.8em;
+    background-color:#e2cfa1;
+}
+
+.cerrarCesion{
+    font-size: 1em;
+    
+}
+
+
+
+.stats{
+    width: 60%;
+}
+
+.red{
+    color:#ad1414;
+}
+.gridGen{
+    height: 80px;
+}
+.imgbin{
+    width: 2em;
+}
+.arriba{
+    color: #ad1414;
+}
+
+.claseyraza{
+    
+}

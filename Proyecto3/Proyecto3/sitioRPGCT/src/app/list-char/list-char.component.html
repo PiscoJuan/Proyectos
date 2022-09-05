@@ -1,0 +1,106 @@
+<mat-toolbar color="" class="titulo">
+    <span class="titl">RPG CHARACTER TRUNK</span>
+</mat-toolbar>
+
+<mat-grid-list cols="2" rowHeight="4em" class="arriba">
+    <mat-grid-tile>
+        <a routerLink="/principal">Volver</a>
+    </mat-grid-tile>
+</mat-grid-list>
+<h2>Clases:</h2>
+<form appearance="fill">
+    <select (change)="aahh($event)">
+        <option [value]=0>None</option>
+        <option *ngFor="let title of dataSource2" [value]="title.id">{{title.class}}</option>
+    </select>
+</form>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.id}}
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.nombre}}
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="raza">
+        <th mat-header-cell *matHeaderCellDef> Raza </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                <div *ngIf="element.race==1; then thenBlock else elseBlock"></div>
+                <ng-template #thenBlock>Elfo</ng-template>
+                <ng-template #elseBlock>
+                    <div *ngIf="element.race==2; then thenBlock2 else elseBlock2"></div>
+                    <ng-template #thenBlock2>Enano</ng-template>
+                    <ng-template #elseBlock2>
+                        <div *ngIf="element.race==3; then thenBlock3 else elseBlock3"></div>
+                        <ng-template #thenBlock3>Humano</ng-template>
+                        <ng-template #elseBlock3>Mediano</ng-template>
+                    </ng-template>
+                </ng-template>
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="clase">
+        <th mat-header-cell *matHeaderCellDef> Class </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{dataSource2[element.class-1].class}}
+            </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="fuerza">
+        <th mat-header-cell *matHeaderCellDef> Fuerza </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.fuerza}}</div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="destreza">
+        <th mat-header-cell *matHeaderCellDef> Destreza </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.destreza}}</div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="constitucion">
+        <th mat-header-cell *matHeaderCellDef> Constitucion </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.constitucion}}</div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="inteligencia">
+        <th mat-header-cell *matHeaderCellDef> Inteligencia </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.inteligencia}} </div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="sabiduria">
+        <th mat-header-cell *matHeaderCellDef> Sabiduria </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.sabiduria}}</div>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="carisma">
+        <th mat-header-cell *matHeaderCellDef> Carisma </th>
+        <td mat-cell *matCellDef="let element">
+            <div *ngIf="element.class==clase.id || clase.id==0">
+                {{element.carisma}}</div>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

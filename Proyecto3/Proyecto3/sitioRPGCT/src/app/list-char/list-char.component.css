@@ -1,0 +1,8 @@
+table {
+    margin-top: .5rem;
+    width: 100%;
+  }
+  mat-form-field{
+    background-color:	#ad1414;
+    color: 	#60502e;
+  }

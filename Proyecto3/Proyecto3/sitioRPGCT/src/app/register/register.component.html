@@ -1,0 +1,32 @@
+<mat-toolbar color="" class="titulo">
+    <span class="titl">RPG CHARACTER TRUNK</span>
+</mat-toolbar>
+
+<mat-grid-list cols="1" rowHeight="10em">
+    <mat-grid-tile>
+        <img src="https://cdn.discordapp.com/attachments/188681270459498496/1004954054662815784/RPGCT.png"
+            alt="Logo Dx">
+    </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="5em">
+    <form action="/action_page.php">
+        <mat-grid-tile>
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" value=""><br>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <label for="contrasena">Contrasena:</label><br>
+            <input type="text" id="contrasena" name="contrasena" value=""><br>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <label for="confContrasena">Confirme contrasena:</label><br>
+            <input type="text" id="confContrasena" name="confContrasena" value=""><br><br>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <a routerLink="/login"><input type="submit" value="Submit"></a>
+        </mat-grid-tile>
+    </form>
+    <mat-grid-tile>
+        <a routerLink="/login">Ya tienes cuenta? inicia sesion!</a>
+    </mat-grid-tile>
+</mat-grid-list>

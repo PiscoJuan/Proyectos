@@ -1,0 +1,55 @@
+{
+    "model": {
+        "type": "Object",
+        "value": {
+            "idUsuario": {
+                "type": "incrementNumber",
+                "options": {
+                    "from": 1
+                }
+            },
+            "fechaDeCreacion": {
+                "type": "faker",
+                "value": "date.between",
+                "options": [
+                    "2022-01-01",
+                    "2022-08-12"
+                ]
+            },
+            "nombre": {
+                "type": "faker",
+                "value": "name.firstName"
+            },
+            "apellido": {
+                "type": "faker",
+                "value": "name.lastName"
+            },
+            "usuario": {
+                "type": "randomNumberBetweenWithString",
+                "value": [
+                    1,
+                    2500000
+                ],
+                "options": {
+                    "prefix": "correo",
+                    "suffix": "@ejemplo.com"
+                }
+            },
+            "contrasena": {
+                "type": "randomNumberBetweenWithString",
+                "value": [
+                    1,
+                    2500000
+                ],
+                "options": {
+                    "prefix": "#",
+                    "suffix": "*"
+                }
+            },
+            "idPersonaje": {
+                "type": "randomNumberBetween",
+                "value": [1, 5]
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<body>
+    <mat-toolbar color="" class="titulo">
+        <span class="titl">RPG CHARACTER TRUNK</span>
+    </mat-toolbar>
+
+    <mat-grid-list cols="2" rowHeight="4em" class="arriba">
+        <mat-grid-tile>
+            <a routerLink="/login">Volver</a>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="5em">
+        <mat-grid-tile>
+            <h1> Aprende a usar nuestra API</h1>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <h2> Porque las APIs son buenas, y son más buenas si son gratis!</h2>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-card>
+        <mat-card-title>Para obtener los datos de las tres categorias, solo sigue los siguientes ejemplos:
+        </mat-card-title>
+    </mat-card>
+
+
+    <mat-card>
+        <mat-card-subtitle> Para obtener Clases:</mat-card-subtitle>
+        <p>En este apartado puede obtener todos los datos de las clases, o buscar clases por su id String. Para obtener todas las instancias bastará solamente con agreagar al link del api la extencion '/clases'. Si conoce el id de una clase en especifico, anada '/clases/' seguido de el numero que corresponde al id de la clase a revisar.</p>
+        <img mat-card-image src="../assets/codigoGetClases.png">
+
+    </mat-card>
+    <mat-card>
+        <mat-card-subtitle> Para obtener Clases en el buscador:</mat-card-subtitle>
+        <img mat-card-image src="../assets/getClases1.png">
+        <img mat-card-image src="../assets/getClases2.png">
+
+    </mat-card>
+    <mat-card>
+        <mat-card-subtitle> Para obtener Razas:</mat-card-subtitle>
+        <p>En este apartado puede obtener los datos de todas las razas. Para hacerlo, bastará solamente con agreagar al link del api la extencion '/razas'.</p>
+        <img mat-card-image src="../assets/codigoGetRazas.png">
+    </mat-card>
+    <mat-card>
+        <mat-card-subtitle> Para obtener Razas en el buscador:</mat-card-subtitle>
+        <img mat-card-image src="../assets/getRazas1.png">
+    </mat-card>
+    <mat-card>
+        <mat-card-subtitle> Para obtener Aventureros:</mat-card-subtitle>
+        <p>En este apartado puede obtener los datos de todos los personajes. Para hacerlo, bastará solamente con agreagar al link del api la extencion '/aventureros'.</p>
+        <img mat-card-image src="../assets/codigoGetChar.png">
+    </mat-card>
+    <mat-card>
+        <mat-card-subtitle> Para obtener Aventureros en el buscador:</mat-card-subtitle>
+        <img mat-card-image src="../assets/getChar1.png">
+    </mat-card>
+</body>
